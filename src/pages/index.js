@@ -11,10 +11,10 @@ import Email from "../components/Email"
 const IndexPage = () => (
   <Layout>
     <Hero />
-    <Trips heading="Our Favorite Destinations" />
+    <Trips heading="Our Favorite Destinations" id="trips"/>
     <Testimonials />
     <Stats />
-    <Email />
+    <Email id="contact"/>
   </Layout>
 )
 

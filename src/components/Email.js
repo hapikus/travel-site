@@ -3,9 +3,9 @@ import styled from "styled-components"
 import EmailBg from "../assets/images/email-1.jpg"
 import { Button } from "./Button"
 
-const Email = () => {
+const Email = ({ id }) => {
   return (
-    <EmailContainer>
+    <EmailContainer id={id}>
       <EmailContent>
         <h1>Get Access To Exclusive Offers</h1>
         <p>Sign Up for newsletters below to get $100 off your first trip</p>

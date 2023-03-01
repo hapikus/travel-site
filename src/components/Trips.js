@@ -5,7 +5,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { Button } from "./Button"
 import { MdOutlineLocationOn } from "react-icons/md"
 
-const Trips = ({ heading }) => {
+const Trips = ({ heading, id}) => {
   const data = useStaticQuery(graphql`
     query TripsQuery {
       allTripsJson {
@@ -60,7 +60,7 @@ const Trips = ({ heading }) => {
   }
 
   return (
-    <ProductContainer>
+    <ProductContainer id={id}>
       <ProductHeading>{heading}</ProductHeading>
       <ProductWrapper>{getTrips(data)}</ProductWrapper>
     </ProductContainer>

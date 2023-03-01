@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
         </FooterDesc>
         <FooterLinkItem>
           <FooterLinkTitle>Contact us</FooterLinkTitle>
-          <FooterLink to="/">Contact</FooterLink>
+          <FooterLink to="#contact">Contact</FooterLink>
           <FooterLink to="/">Support</FooterLink>
           <FooterLink to="/">Destinations</FooterLink>
           <FooterLink to="/">Sponsorships</FooterLink>
@@ -45,7 +45,6 @@ const FooterContainter = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   color: #000;
-  background: #fafafb;
   background: #eee;
 `
 const FooterDesc = styled.div`
@@ -97,7 +96,7 @@ const FooterLinkTitle = styled.h2`
   font-size: 14px;
   margin-bottom: 16px;
 `
-const FooterLink = styled(Link)`
+const FooterLink = styled(AnchorLink)`
   text-decoration: none;
   margin-bottom: 0.5rem;
   font-size: 14px;

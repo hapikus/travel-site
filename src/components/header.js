@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import * as React from "react"
 import styled from "styled-components"
 import { menuData } from "../data/MenuData"
@@ -46,7 +46,7 @@ const Nav = styled.nav`
   }
 `
 
-const NavLink = styled(Link)`
+const NavLink = styled(AnchorLink)`
   color: ${color};
   display: flex;
   align-items: center;
@@ -56,10 +56,6 @@ const NavLink = styled(Link)`
   cursor: pointer;
 
   font-weight: 700;
-
-  @media screen and (max-width: 350px) {
-    font-size: 14px;
-  }
 `
 
 const NavMenu = styled.div`
