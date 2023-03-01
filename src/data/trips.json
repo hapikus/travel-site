@@ -1,0 +1,26 @@
+[
+    {
+        "imagesLink": "../assets/images/travel-1.jpg",
+        "alt": "Chiang Mai",
+        "name": "Chiang Mai",
+        "button": "View Destination"
+    },
+    {
+        "imagesLink": "../assets/images/travel-2.jpg",
+        "alt": "Phuket",
+        "name": "Phuket",
+        "button": "View Destination"
+    },
+    {
+        "imagesLink": "../assets/images/travel-3.jpg",
+        "alt": "Yangon",
+        "name": "Yangon",
+        "button": "View Destination"
+    },
+    {
+        "imagesLink": "../assets/images/travel-4.jpg",
+        "alt": "Bangkok",
+        "name": "Bangkok",
+        "button": "View Destination"
+    }
+]
